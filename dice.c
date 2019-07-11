@@ -8,7 +8,7 @@ char a[10];
 void dice(){
   int DICE[2];
   srand((unsigned int)time(NULL));
-  printf("Rolling the dice ...");
+  printf("Rolling the dice ...\n");
   for(i = 0; i < 2; i++){
     DICE[i] = rand()%6 + 1;
     printf("Die %d: %d\n",i+1,DICE[i]);
