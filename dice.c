@@ -3,7 +3,7 @@
 #include<time.h>
 
 int i;
-char a;
+char a[10];
 
 void dice(){
   int DICE[2];
