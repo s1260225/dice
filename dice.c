@@ -13,6 +13,8 @@ void dice(){
     printf("Die %d: %d\n",i+1,DICE[i]);
   }
   printf("Total value :%-3d\n",DICE[0] + DICE[1]);
+  if(DICE[0]+DICE[1]>7)printf("You won");
+  else printf("You lost");
 }
 int main(){
   dice();
