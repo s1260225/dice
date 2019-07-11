@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<time.h>
 
-int i;
+int i,a;
 
 void dice(){
   int DICE[2];
@@ -13,14 +13,14 @@ void dice(){
     printf("Die %d: %d\n",i+1,DICE[i]);
   }
   printf("Total value :%-3d\n",DICE[0] + DICE[1]);
-  if(DICE[0]+DICE[1]>7)printf("You won");
-  else printf("You lost");
+  if(DICE[0]+DICE[1]>7)printf("%d won!",a);
+  else printf("%d lost",a);
 }
 int main(){
-  int a,b;
   printf("What is your name?\n");
   scanf("%d",&a);
   printf("Hello %d",a);
+  dice();
   dice();
   return 0;
 }
