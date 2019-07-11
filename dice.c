@@ -14,13 +14,13 @@ void dice(){
     printf("Die %d: %d\n",i+1,DICE[i]);
   }
   printf("Total value :%-3d\n",DICE[0] + DICE[1]);
-  if(DICE[0]+DICE[1]>7)printf("%s won!",a);
-  else printf("%s lost",a);
+  if(DICE[0]+DICE[1]>7)printf("%s won!\n",a);
+  else printf("%s lost\n",a);
 }
 int main(){
   printf("What is your name?\n");
   scanf("%s",a);
-  printf("Hello %s",a);
+  printf("Hello %s\n",a);
   dice();
   dice();
   return 0;
