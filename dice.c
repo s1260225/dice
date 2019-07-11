@@ -15,6 +15,10 @@ void dice(){
   printf("Total value :%-3d\n",DICE[0] + DICE[1]);
 }
 int main(){
+  int a,b;
+  printf("What is your name?\n");
+  scanf("%d",&a);
+  printf("Hello %d",a);
   dice();
   return 0;
 }
