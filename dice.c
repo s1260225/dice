@@ -17,6 +17,10 @@ void dice(){
   else printf("You lost");
 }
 int main(){
+  int a,b;
+  printf("What is your name?\n");
+  scanf("%d",&a);
+  printf("Hello %d",a);
   dice();
   return 0;
 }
